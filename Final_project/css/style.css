@@ -1,0 +1,152 @@
+/* Global Styles */
+
+body {
+    background-color: #4BAABF;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.tagline {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0091ff; /* Pokémon yellow for the tagline */
+    font-style: italic;
+    text-align: center;
+    margin-top: 10px; /* Adds spacing above */
+}
+
+#container {
+    background-color: #F2E6A7;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 aspect ratio */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Mobile Styles */
+
+@media (min-width: 320px) {
+    nav {
+        background-color: #333;
+        padding: 5px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    nav ul {
+     list-style-type: none;
+        padding: 0;
+    }
+
+    nav li {
+    display: block;
+    }
+
+    nav li a {
+    text-decoration: none;
+    color: white;
+    height: 40px;
+    line-height: 40px;
+    background-color: black;
+    font-size: 11.5px;
+    margin-top: 5px;
+    display: block;
+
+    }
+
+    nav li a:hover {
+   background-color: #555; 
+    }
+
+    main {
+    padding: 20px;
+    }
+
+    h1,h2,h3 {
+    text-align: center;
+    }   
+
+    h1 {
+        font-family: "Anton SC", serif;
+    }
+
+    h2 {
+        font-family: "Roboto", serif;
+    }
+
+    footer {
+    text-align: center;
+    padding: 40px;
+    color: black;
+    }
+}
+
+/* Tablet Styles */
+
+@media (min-width: 768px) {
+    nav li {
+        display: inline-block;
+    }
+
+    nav li a {
+        width: 150px;
+        height: 50px;
+        line-height: 50px;
+        margin: 3px;
+    }
+   
+}
+
+.other_pics {
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px black;
+}
+
+
+/* Desktop Styles */
+
+@media (min-width: 1024px) {
+   #container {
+    width: 65%;
+    margin: 20px auto;
+    border: 4px solid black;
+    border-radius: 20px;
+   }
+   
+   nav {
+    padding: 2px;
+    margin: 0;
+   }
+
+   nav li a {
+    background-color: black;
+   }
+hr {
+    display: none;
+}
+   #multi_col {
+    display: flex;
+}
+
+.col {
+margin: 20px;
+padding: 20px;
+border: 2px solid black;
+}
+}
