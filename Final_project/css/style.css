@@ -216,9 +216,20 @@ main ul li, main ol li {
     line-height: 1.4;    /* Adjust line height for better spacing */
 }
 
+.training-guide ul, .training-guide ol {
+    padding-left: 20px; /* Keeps the indentation */
+    margin: 0;           /* Remove default margin */
+    list-style-position: inside; /* Ensures list items are inside the container */
+}
 
+/* Adjust spacing between list items in the Training Guide */
+.training-guide ul li, .training-guide ol li {
+    margin-bottom: 8px; /* Reduce the space between list items */
+    padding: 0;         /* Remove padding */
+    line-height: 1.4;    /* Adjust line height for better spacing */
+}
 
-
+    
 /* Responsive Design */
 @media (max-width: 1024px) {
     main {
