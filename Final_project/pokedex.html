@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/favicon.jpg">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="index.html">Pokémon World</a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pokedex.html">Pokédex</a></li>
+                    <li><a href="battles.html">Battles</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="training.html">Training Guide</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="two-column">
+            
+        
+            
+            <h1>What is the Pokédex?</h1>
+            <p>The **Pokédex** is an electronic device that records data on Pokémon encountered by a trainer. It is a **vital tool** for every Pokémon trainer, providing detailed information on the various species in the Pokémon world.</p>
+            <p>In the Pokémon games, trainers use the **Pokédex** to collect data about Pokémon they’ve encountered during their journeys. As a trainer catches or sees more Pokémon, their Pokédex is updated with detailed entries about each Pokémon's habitat, abilities, and evolutions.</p>
+            <p>The **Pokédex** is also a helpful tool for trainers when deciding which Pokémon to capture next. It lists the habitats and locations of different Pokémon, which is essential for **catching rare or legendary Pokémon**. It is often considered a **Pokémon encyclopedia**, providing trainers with everything they need to know about the Pokémon they encounter.</p>
+            <p>For example, the **Kanto Pokédex** includes entries for the first 151 Pokémon, from **Bulbasaur** to **Mew**. In later regions, additional Pokémon were added, and the **Pokédex** grew in size and functionality. The Pokédex has evolved over time, and in modern games, it is often a feature within the **smartphone-like devices** of trainers.</p>
+
+            <section class="column">
+                <h2>Electric Pokémon</h2>
+                <img src="images/pickachu2.jpg" alt="Pikachu">
+                <p><strong>Pikachu:</strong> Pikachu is one of the most well-known Pokémon in existence...</p>
+                <p><strong>Abilities:</strong> Static, Lightning Rod</p>
+                <p><strong>Weakness:</strong> Ground-type moves</p>
+                
+                <h3>Other Electric Pokémon:</h3>
+                <ul>
+                    <li><strong>Jolteon:</strong> A sleek and agile Pokémon known for its sharp spikes and lightning-fast speed.</li>
+                    <li><strong>Zapdos:</strong> A legendary bird Pokémon, capable of controlling thunderstorms.</li>
+                </ul>
+            </section>
+        
+            <section class="column">
+                <h2>Fire Pokémon</h2>
+                <img src="images/charizard2.jpg" alt="Charizard">
+                <p><strong>Charizard:</strong> Charizard is a fierce and independent Pokémon, known for its ability to breathe fire...</p>
+                <p><strong>Abilities:</strong> Blaze, Solar Power</p>
+                <p><strong>Weaknesses:</strong> Water, Rock, Electric</p>
+        
+                <h3>Other Fire Pokémon:</h3>
+                <ul>
+                    <li><strong>Arcanine:</strong> Known as the "Legendary Pokémon," Arcanine is admired for its majestic appearance...</li>
+                    <li><strong>Blaziken:</strong> A Fire/Fighting-type Pokémon with high attack power and devastating moves like Blaze Kick.</li>
+                </ul>
+            </section>
+
+            <section class="column">
+                <h2>Water Pokémon</h2>
+                <img src="images/Squirtle.jpg" alt="Squirtle">
+                <p><strong>Squirtle:</strong> Squirtle is a Water-type Pokémon that is often chosen as a starter Pokémon in the Kanto region. Squirtle is known for its ability to launch powerful water-based attacks like **Water Gun** and **Hydro Pump**. It evolves into Wartortle and then into Blastoise, which is capable of using **Hydro Cannon**, one of the most powerful Water-type moves.</p>
+                <p><strong>Abilities:</strong> Torrent</p>
+                <p><strong>Weakness:</strong> Electric-type moves</p>
+                
+                <h3>Other Water Pokémon:</h3>
+                <ul>
+                    <li><strong>Gyarados:</strong> Known for its transformation from the weak Magikarp into the mighty Gyarados. As a Water/Flying-type, it can unleash **Hydro Pump**, **Ice Beam**, and **Dragon Rage**. Gyarados is often feared for its devastating offensive abilities and intimidating appearance.</li>
+                    <li><strong>Milotic:</strong> A graceful Water-type Pokémon known for its beautiful scales. Milotic evolves from Feebas and has the ability to learn powerful healing moves like **Recover** and **Aqua Ring**, along with offensive moves like **Surf** and **Ice Beam**.</li>
+                    <li><strong>Vaporeon:</strong> A Water-type evolution of Eevee that can summon powerful Water-type moves like **Surf** and **Hydro Pump**. Vaporeon’s ability **Water Absorb** allows it to heal by absorbing Water-type moves used against it.</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <footer> <p>&copy; 2024 Pokémon World Project</p> </footer>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.querySelector('.nav-links');
+    
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
+

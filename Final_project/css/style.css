@@ -1,32 +1,34 @@
-/* Global Styles */
-
+/* General Styles */
 body {
-    background-color: #4BAABF;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #330aff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    min-height: 100vh;
 }
 
-img {
-    display: block;
-    margin: 0 auto;
-    width: 100%;
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(242, 240, 125, 0.994);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }
-
-.tagline {
-    font-size: 24px;
-    font-weight: bold;
-    color: #0091ff; /* Pokémon yellow for the tagline */
-    font-style: italic;
-    text-align: center;
-    margin-top: 10px; /* Adds spacing above */
-}
-
-#container {
-    background-color: #F2E6A7;
-}
-
+    
+/* YouTube Video Container */
 .video-container {
     position: relative;
-    width: 100%;
-    padding-top: 56.25%; /* 16:9 aspect ratio */
+    padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    margin: 20px auto;
 }
 
 .video-container iframe {
@@ -35,118 +37,273 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    border: none;
 }
 
-/* Mobile Styles */
+h1 {
+    font-family: "Baskervville SC", serif;
+    text-align: center;
+    margin-bottom: 30px;  
+    font-size: 2.5em;
+}
+/* Center <h2> Headings */
+h2 {
+    color: #010c14; /* Change color for sub-headings */
+    font-size: 2em;
+    text-align: center;  /* Center align the text */
+    margin-top: 30px; /* Adds space above the heading */
+    margin-bottom: 20px; /* Adds space below the heading */
+}
 
-@media (min-width: 320px) {
-    nav {
-        background-color: #333;
-        padding: 5px;
-        margin-top: 10px;
-        text-align: center;
-    }
 
-    nav ul {
-     list-style-type: none;
-        padding: 0;
-    }
 
-    nav li {
-    display: block;
-    }
 
-    nav li a {
+
+/* Header & Navigation */
+header {
+    background-color: #0658f0;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+.navbar .logo a {
     text-decoration: none;
     color: white;
-    height: 40px;
-    line-height: 40px;
-    background-color: black;
-    font-size: 11.5px;
-    margin-top: 5px;
-    display: block;
+    font-size: 1.8em;
+    font-weight: bold;
+}
 
-    }
+/* Navigation Links */
+.navbar .nav-links {
+    display: flex;
+    gap: 20px;
+}
 
-    nav li a:hover {
-   background-color: #555; 
-    }
+.navbar .nav-links li {
+    list-style-type: none;
+}
 
-    main {
-    padding: 20px;
-    }
+.navbar .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
 
-    h1,h2,h3 {
+.navbar .nav-links li a:hover {
+    background-color: #ff5733;
+    border-radius: 5px;
+}
+
+/* Hamburger Menu (mobile) */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    margin: 5px 0;
+    transition: transform 0.3s ease;
+}
+/* Mobile Navigation - Hide nav links by default */
+.nav-links {
+    display: none;
+}
+
+.nav-links.active {
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    }   
+    background-color: #333;
+}
 
-    h1 {
-        font-family: "Anton SC", serif;
+.hamburger {
+    display: block;
+}
+
+
+/* Main Content */
+main {
+    text-align: center;  /* Center align all text in the main content */
+}
+
+/* Featured Images */
+.featured {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.featured img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Columns */
+.three-column {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;  /* Center columns */
+}
+
+.two-column {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;  /* Ensures columns are centered */
+}
+
+.column {
+    flex: 1;
+    min-width: 300px;
+    background: rgb(255, 255, 90);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 60%;
+    align-items: center;
+}
+
+/* Image Fix for Container */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* Adjust spacing for unordered and ordered lists */
+ul, ol {
+    padding-left: 20px;
+    margin: 0;
+}
+
+/* Adjust spacing between list items */
+ul li, ol li {
+    margin-bottom: 5px; /* Decrease margin between list items */
+    padding: 0;
+    line-height: 1.2; /* Tighter line spacing */
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    main {
+        padding: 20px; /* Ensures padding is consistent */
+    }
+
+
+    /* Ensure "Advanced Pokémon Battle Mechanics" section stays in place */
+    .three-column {
+        flex-direction: column; /* Stacks columns vertically */
+        gap: 30px; /* Adds spacing between sections */
     }
 
     h2 {
-        font-family: "Roboto", serif;
+        font-size: 1.5em; /* Adjust font size for tablets */
+        margin-top: 20px; /* More space on top */
     }
 
-    footer {
-    text-align: center;
-    padding: 40px;
-    color: black;
+    ul {
+        padding-left: 20px; /* Keeps indentation in lists */
+        font-size: 1em; /* Makes text more readable on tablets */
     }
+
+    /* Make sure all content fits within the container */
+    .column {
+        max-width: 100%; /* Ensures full-width columns */
+        padding: 15px;
+    }
+
 }
 
-/* Tablet Styles */
-
-@media (min-width: 768px) {
-    nav li {
-        display: inline-block;
-    }
-
-    nav li a {
-        width: 150px;
-        height: 50px;
-        line-height: 50px;
-        margin: 3px;
-    }
-   
-}
-
-.other_pics {
-    width: 50%;
-    border-radius: 10px;
-    box-shadow: 3px 3px 3px black;
-}
-
-
-/* Desktop Styles */
-
-@media (min-width: 1024px) {
-   #container {
-    width: 65%;
-    margin: 20px auto;
-    border: 4px solid black;
-    border-radius: 20px;
-   }
-   
-   nav {
-    padding: 2px;
-    margin: 0;
-   }
-
-   nav li a {
-    background-color: black;
-   }
-hr {
+.navbar .nav-links {
     display: none;
 }
-   #multi_col {
+
+.navbar .nav-links.active {
     display: flex;
 }
 
-.col {
-margin: 20px;
-padding: 20px;
-border: 2px solid black;
+.navbar .nav-links li a {
+    padding: 15px;
+    font-size: 1.5em;
 }
+}
+
+
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .three-column {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .two-column {
+        flex-direction: column;
+        align-items: center; /* Stack columns vertically on small screens */
+    }
+
+    .column {
+        max-width: 100%;  /* Ensures full-width columns on mobile */
+        padding: 15px;
+    }
+
+   
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.3em;
+    }
+
+    p {
+        font-size: 1em;
+    }
 }
