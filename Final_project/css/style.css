@@ -202,18 +202,20 @@ footer {
     width: 100%;
 }
 
-/* Adjust spacing for unordered and ordered lists */
-ul, ol {
-    padding-left: 20px;
-    margin: 0;
+
+main ul, main ol {
+    padding-left: 20px; /* Keeps the indentation */
+    margin: 0;           /* Remove default margin */
+    list-style-position: inside; /* Ensure list items are inside the container */
 }
 
-/* Adjust spacing between list items */
-ul li, ol li {
-    margin-bottom: 5px; /* Decrease margin between list items */
-    padding: 0;
-    line-height: 1.2; /* Tighter line spacing */
+/* Adjust spacing between list items in content */
+main ul li, main ol li {
+    margin-bottom: 8px; /* Reduce the space between list items */
+    padding: 0;         /* Remove padding */
+    line-height: 1.4;    /* Adjust line height for better spacing */
 }
+
 
 
 
