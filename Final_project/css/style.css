@@ -239,8 +239,10 @@ main ul li, main ol li {
 
     /* Ensure "Advanced Pokémon Battle Mechanics" section stays in place */
     .three-column {
-        flex-direction: column; /* Stacks columns vertically */
-        gap: 30px; /* Adds spacing between sections */
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
     }
 
     h2 {
@@ -258,6 +260,7 @@ main ul li, main ol li {
         max-width: 100%; /* Ensures full-width columns */
         padding: 15px;
     }
+
 
 }
 
@@ -319,4 +322,16 @@ main ul li, main ol li {
     p {
         font-size: 1em;
     }
+
+    .full-width {
+        width: 100%;
+        display: block;
+        clear: both;
+        text-align: center;
+        margin-top: 30px;
+    }
+    
+    
 }
+
+
